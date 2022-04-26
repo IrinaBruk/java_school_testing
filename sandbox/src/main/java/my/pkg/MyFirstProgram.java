@@ -12,6 +12,9 @@ public class MyFirstProgram {
 
         Rectangle r = new Rectangle(4, 6);
         System.out.println("Ploshad' pryamougolnika so storonami " + r.a + " , " + r.b + " = " + r.area());
+
+        Point p = new Point(3,2,7,8);
+        System.out.println("Rasstoyanie mezdu tochkami (" + (p.p1)  + "," + p.p2 + ")" + " i  (" + p.p3 + "," + p.p4 + ") = "+ p.distance());
     }
 
 
@@ -19,8 +22,6 @@ public class MyFirstProgram {
 
         System.out.println("Hello, " + somebody + "!");
     }
-
-
 
 
 }
