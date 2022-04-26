@@ -7,12 +7,11 @@ public class MyFirstProgram {
         hello("Yura");
         hello("Yuriy G");
 
-        double l = 5;
-        System.out.println("Ploshad' kvadrata so storonoy " + l + " = " + area(l));
+        Square s = new Square(5);
+        System.out.println("Ploshad' kvadrata so storonoy " + s.l + " = " + area(s));
 
-        double a = 4;
-        double b = 6;
-        System.out.println("Ploshad' pryamougolnika so storonami " + a + " , " + b + " = " + area(a, b));
+        Rectangle r = new Rectangle(4, 6);
+        System.out.println("Ploshad' pryamougolnika so storonami " + r.a + " , " + r.b + " = " + area(r));
     }
 
 
@@ -21,11 +20,11 @@ public class MyFirstProgram {
         System.out.println("Hello, " + somebody + "!");
     }
 
-    public static double area(double l) {
-        return l * l;
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b) {
-        return a * b;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
 }
