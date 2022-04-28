@@ -9,5 +9,8 @@ repositories {
 
 dependencies {
     implementation 'org.testng:testng:7.5'
+    implementation 'org.slf4j:osgi-over-slf4j:2.0.0-alpha7'
+    implementation 'org.slf4j:slf4j-nop:2.0.0-alpha7'
+//    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.+'
 }
 
